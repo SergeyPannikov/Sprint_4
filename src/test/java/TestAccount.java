@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -31,6 +33,8 @@ public class TestAccount {
     }
 
 
+    @DisplayName("Проверка класса c разными параметрами по проверке имени и фамилии клиента на карте")
+    @Description("Проверяем разными значениями , что проверка отрабатывает корректно")
     @Test
     public void testCheckNameToEmboss() throws Exception {
         Account account = new Account(name);
